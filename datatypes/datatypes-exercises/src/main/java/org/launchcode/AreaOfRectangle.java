@@ -6,12 +6,12 @@ public class AreaOfRectangle {
         Scanner input = new Scanner(System.in);
 //LENGTH
         System.out.println("What is the length of this rectangle? : ");
-        length = input.nextInt();
+        Double length = input.nextDouble();
 //WIDTH
         System.out.println("What is the width of this rectangle? : ");
-        width = input.nextInt();
+        Double width = input.nextDouble();
 
-        area = (length * width);
+        Double area = (length * width);
 
         System.out.println("The area of the rectangle is: " + area);
 
