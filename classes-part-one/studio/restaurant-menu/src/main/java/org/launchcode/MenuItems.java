@@ -6,27 +6,33 @@ public class MenuItems {
     private double price;
     private String category;
     private String description;
+    private boolean isNew;
 
     public MenuItems(String name, double price, String category, String description) {
         this.name = name;
         this.price = price;
         this.category = category;
         this.description = description;
+        this.isNew = isNew;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    private void setPrice(double price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    private void setCategory(String category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 
-    private void setDescription(String description) {
+    public void setNew(boolean aNew) {
+        isNew = aNew;
+    }
+
+    public void setDescription(String description) {
         this.description = description;
     }
 }
